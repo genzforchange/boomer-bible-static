@@ -1,0 +1,322 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+h3, h4, span, p, ul, li, a{
+font-family: forma-djr-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 2px;
+}
+
+a{
+  color: #183068;
+  text-underline-position: under;
+/*   text-decoration-color: #183068; */
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+ul{
+padding-inline-start: 30px;
+}
+
+body {
+   padding: 1em;
+  color: black;
+  background-image: url("background.jpg");
+  background-color: #191994;
+  background-size: 100%;
+}
+
+body h1{
+  margin-top:0;
+}
+
+header{
+  color: white;
+  height: 100vh;
+}
+
+header span{
+  font-family: forma-djr-display,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+#heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#heading a{
+    color: white;
+  text-decoration: none;
+  border: .75px white solid;
+  border-radius: 2px;
+  padding: 5px 6px;
+  transition: .2s;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+
+#heading a:hover{
+  background-color: white;
+  color: black;
+}
+
+body h2{
+  font-family: forma-djr-display,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 2px;
+  max-width: 600px;
+  line-height: 40px;
+}
+
+#introduction{
+  display:flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin: 15vh auto 0;
+  align-items: center;
+}
+
+#back-to-top-mobile, #back-to-top-mobile img{
+  display: none;
+}
+
+#back-to-top-desktop{
+    display: block;
+    }
+
+  #back-to-top-desktop img{
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    
+  }
+
+nav{
+  display:flex;
+  flex-direction: column;
+  font-family: forma-djr-display,sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 25px;
+  padding-left: 30px;
+  margin-right:20px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  font-family: forma-djr-display,sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+  transition:.2s;
+}
+
+nav a:hover{
+  color: #95aae9;
+}
+
+select{
+  display: none;
+}
+
+.person{
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0px auto 20px;
+  max-width: 800px;
+}
+
+.person h2{
+  font-size: 30px;
+  margin: 1px 0px;
+}
+
+.topic{
+  margin-bottom: 50px;
+}
+.topic h3{
+  color: #d02536;
+  font-family: forma-djr-display,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.event h4{
+  color: #3b4278;
+  font-family: forma-djr-display,sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.event span, .event h4{
+  display: inline;
+  margin-right: 10px;
+}
+
+.event a{
+/*   display: none;   */
+  /* just hiding links for now!! */
+  text-decoration: none;
+  font-size: 9px;
+}
+
+footer{
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+footer p{
+  font-size: 10px;
+  margin: 1px;
+  text-align: right;
+}
+
+#sharables a {
+  margin-bottom: 5px;
+}
+
+
+
+@media screen and (max-width: 920px) {
+  body h2{
+    font-size: 25px;
+    line-height: initial;
+  }
+
+  #introduction{
+    margin-top: initial;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+
+  nav{
+    display: none;
+  }
+
+  select{
+    display: block;
+    font-family: forma-djr-display,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: white 5px solid;
+    border-radius: 2px;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+  }
+
+  option{
+    font-family: forma-djr-display,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+    #back-to-top-desktop, #back-to-top-desktop img{
+  display: none;
+}
+
+  #back-to-top-mobile{
+    display: block;
+    }
+
+  #back-to-top-mobile img{
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 25px;
+    
+  }
+
+  #sharables{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+}
+
+p a {
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  header h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #heading{
+  flex-direction: column;
+  
+}
+
+
+  
+  header h2{
+    font-size: 18px;
+  }
+  
+  select{
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .person{
+    margin: inherited 0;
+  }
+  
+  .person h2{
+    font-size: 25px;
+  }
+
+  .topic h3{
+    font-size: 16px;
+  }
+  #sharables{
+    align-items: center;
+  }
+
+}
